@@ -12,8 +12,7 @@
         "Id": "org.frapell.networkspeed",
         "License": "GPL-2.0+",
         "Name": "Network Speed",
-        "Version": "0.1.0",
-        "Website": ""
+        "Version": "0.1.0"
     },
     "X-Plasma-API-Minimum-Version": "6.0"
 }

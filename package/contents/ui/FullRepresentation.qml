@@ -144,8 +144,9 @@ ColumnLayout {
         opacity: 0.7
         elide: Text.ElideRight
         textFormat: Text.PlainText
-        text: i18nc("@info footer", "Interface: %1 · Since boot: ↓ %2 ↑ %3 · Last %4 min",
+        text: i18nc("@info footer, %4 is the history window", "Interface: %1 · Since boot: ↓ %2 ↑ %3 · %4",
                     root.interfaceLabel, root.bytes(root.totalDown), root.bytes(root.totalUp),
-                    full.cfg.historyMinutes)
+                    i18ncp("@info footer history window", "Last minute", "Last %1 minutes",
+                           full.cfg.historyMinutes))
     }
 }
