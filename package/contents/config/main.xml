@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile name=""/>
+
+  <group name="General">
+    <entry name="interfaceId" type="String">
+      <default>all</default>
+    </entry>
+    <entry name="pollInterval" type="Int">
+      <default>1000</default>
+      <min>250</min>
+      <max>10000</max>
+    </entry>
+  </group>
+
+  <group name="Units">
+    <entry name="useBits" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="useDecimal" type="Bool">
+      <default>false</default>
+    </entry>
+    <!-- 0 auto, 1 K, 2 M, 3 G -->
+    <entry name="unitPrefix" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="decimals" type="Int">
+      <default>1</default>
+      <min>0</min>
+      <max>3</max>
+    </entry>
+  </group>
+
+  <group name="Appearance">
+    <entry name="downloadColor" type="Color">
+      <default>#f67400</default>
+    </entry>
+    <entry name="uploadColor" type="Color">
+      <default>#3daee9</default>
+    </entry>
+    <!-- 0 text right, 1 text left, 2 bars only, 3 text only -->
+    <entry name="textPosition" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="showArrows" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="barLengthUnits" type="Int">
+      <default>4</default>
+      <min>1</min>
+      <max>20</max>
+    </entry>
+  </group>
+
+  <group name="Range">
+    <entry name="rangeAuto" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="rangeWindowSeconds" type="Int">
+      <default>60</default>
+      <min>5</min>
+      <max>3600</max>
+    </entry>
+    <!-- bytes/s -->
+    <entry name="rangeFloor" type="Double">
+      <default>102400</default>
+    </entry>
+    <entry name="fixedMaxDownload" type="Double">
+      <default>10485760</default>
+    </entry>
+    <entry name="fixedMaxUpload" type="Double">
+      <default>1048576</default>
+    </entry>
+  </group>
+
+  <group name="History">
+    <entry name="historyMinutes" type="Int">
+      <default>15</default>
+      <min>1</min>
+      <max>180</max>
+    </entry>
+    <entry name="chartSmooth" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="chartFillOpacity" type="Int">
+      <default>20</default>
+      <min>0</min>
+      <max>100</max>
+    </entry>
+    <entry name="showGridLines" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="showStatCurrent" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="showStatAverage" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="showStatPeak" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="showStatTotal" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="showFooter" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="chartMaxPoints" type="Int">
+      <default>600</default>
+    </entry>
+  </group>
+</kcfg>
