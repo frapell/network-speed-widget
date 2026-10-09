@@ -68,6 +68,17 @@ KDE Store.
 The formatting and statistics code lives in `package/contents/ui/code/` as
 plain JavaScript with no QML dependencies, so the tests load it directly.
 
+## Releasing
+
+1. Bump `KPlugin.Version` in `package/metadata.json` and commit.
+2. Tag and push: `git tag v0.2.0 && git push origin v0.2.0`.
+3. The [Release workflow](.github/workflows/release.yml) checks that the tag
+   matches the version, runs the tests, builds the `.plasmoid` and publishes a
+   GitHub release with it attached.
+4. Download the `.plasmoid` from the release and upload it under *Files* on
+   the KDE Store product page, with the same version and a changelog entry.
+   The store has no upload API, so this step is manual.
+
 ## Translations
 
 All user-visible strings go through `i18n()`. See [`po/README.md`](po/README.md)
