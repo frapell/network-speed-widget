@@ -40,8 +40,13 @@ not listed.
 
 ## Install
 
-From the KDE Store: *Add Widgets → Get New Widgets → Download New Plasma
-Widgets*, search for "Network Speed".
+From the [KDE Store](https://store.kde.org/p/2377858/): *Add Widgets → Get
+New Widgets → Download New Plasma Widgets*, search for "Network Speed".
+
+Or download the `.plasmoid` from the
+[latest release](https://github.com/frapell/network-speed-widget/releases/latest)
+and install it with *Add Widgets → Get New Widgets → Install Widget From Local
+File…*, or `kpackagetool6 -t Plasma/Applet -i <file>`.
 
 From source:
 
@@ -76,7 +81,8 @@ plain JavaScript with no QML dependencies, so the tests load it directly.
    matches the version, runs the tests, builds the `.plasmoid` and publishes a
    GitHub release with it attached.
 4. Download the `.plasmoid` from the release and upload it under *Files* on
-   the KDE Store product page, with the same version and a changelog entry.
+   the [KDE Store product page](https://store.kde.org/p/2377858/), with the
+   same version and a changelog entry.
    The store has no upload API, so this step is manual.
 
 ## Translations
