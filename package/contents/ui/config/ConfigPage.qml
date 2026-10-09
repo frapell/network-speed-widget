@@ -61,4 +61,11 @@ KCM.SimpleKCM {
     property var cfg_showFooterDefault
     property var cfg_chartMaxPoints
     property var cfg_chartMaxPointsDefault
+
+    // Not ours: the panel passes these to every applet's pages, which logs a
+    // warning per page unless they exist.
+    property var cfg_expanding
+    property var cfg_expandingDefault
+    property var cfg_length
+    property var cfg_lengthDefault
 }
